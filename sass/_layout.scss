@@ -1,0 +1,44 @@
+.container {
+  overflow: hidden;
+  background-color: #fff;
+
+  max-width: 142rem;
+
+  border: 1px solid rgb(167, 167, 167);
+  margin: 5rem auto;
+  border-radius: 2rem;
+  box-shadow: 0 5rem 15rem rgba(#000, 0.3);
+  display: flex;
+}
+
+.panel {
+  width: 100%;
+
+  &__intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $color-grey-blue;
+  }
+  &__heading {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &__viewall {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  &__content {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1.5rem;
+
+    &--col {
+      flex-direction: column;
+      gap: 0;
+      margin-top: 1rem;
+    }
+  }
+}

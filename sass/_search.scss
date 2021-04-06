@@ -1,0 +1,25 @@
+.search {
+  display: flex;
+  align-items: center;
+  color: $color-primary-light;
+  margin-bottom: 5rem;
+
+  &__icon {
+    margin-left: 1rem;
+    margin-right: -3rem;
+    position: relative;
+    z-index: 5;
+  }
+  &__input {
+    background-color: $color-grey-blue;
+    outline: none;
+    padding: 1rem 0 1rem 4rem;
+    border-radius: 999px;
+    width: 100%;
+    border: none;
+  }
+
+  &--global {
+    width: 50%;
+  }
+}

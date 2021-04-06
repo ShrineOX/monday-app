@@ -1,0 +1,66 @@
+.card {
+  width: 100%;
+  background-color: $color-grey-blue;
+  border-radius: 1.2rem;
+  border: 2px solid #f6f7fa;
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  row-gap: 1.2rem;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__team {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: row-reverse;
+
+    img {
+      height: 2rem;
+      width: 2rem;
+      object-fit: cover;
+      border-radius: 50%;
+      box-sizing: content-box;
+      border: 2px solid $color-grey-blue;
+      //   border: 2px solid red;
+    }
+    img:not(:first-child) {
+      margin-right: -1rem;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    cursor: pointer;
+  }
+  &__task {
+    font-size: 1.2rem;
+    color: $color-grey;
+  }
+
+  // Empty card modifier
+  &--empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    border: 2px dashed $color-grey-blue;
+  }
+
+  &--empty &__plus-icon {
+    color: $color-primary;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: $color-grey-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}

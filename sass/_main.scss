@@ -1,0 +1,9 @@
+.main {
+  flex: 0 0 80rem;
+  padding: 3rem 4rem;
+  border-right: 1px solid $color-grey-blue;
+
+  &__recent {
+    margin-top: 5rem;
+  }
+}

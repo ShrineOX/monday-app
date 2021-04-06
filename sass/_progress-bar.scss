@@ -1,0 +1,36 @@
+.progress {
+  flex: 1;
+  min-width: 10rem;
+  height: 0.5rem;
+
+  background-color: $color-primary-light;
+  border-radius: 2rem;
+  position: relative;
+  // overflow: hidden;
+
+  &__bar {
+    border-radius: 2rem;
+    height: 100%;
+    width: 60%;
+    background-color: $color-primary;
+    text-align: right;
+  }
+
+  // percent in the project card
+  &__percent {
+    top: -2rem;
+    left: 0.6rem;
+    position: relative;
+    color: $color-primary;
+    font-size: 1rem;
+  }
+
+  &--storage {
+    height: 0.6rem;
+    background-color: #30358a;
+
+    div {
+      background-color: $color-yellow;
+    }
+  }
+}
